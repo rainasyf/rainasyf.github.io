@@ -1,10 +1,93 @@
-<html>
-<head></head>
-<title>Raina Syifa Gayatri</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Web - Raina Syifa Gayatri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .profile-pic {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: #bbb;
+            margin: 20px auto;
+        }
+
+        .name-nim {
+            background-color: #4caf50;
+            color: white;
+            padding: 15px;
+            margin: 20px auto;
+            width: 300px;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+
+        .social-icons a {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: #4caf50;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .date-time {
+            background-color: #fff;
+            border: 2px solid #4caf50;
+            color: #4caf50;
+            padding: 10px;
+            font-size: 16px;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            border-radius: 5px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Raina Syifa Gayatri</h1>
-    <h1>1202220281</h1>
-    <h1>Sistem Informasi</h1>
+
+    <div class="profile-pic"></div>
+
+    <div class="name-nim">
+        Raina Syifa Gayatri <br> 1202220281
+    </div>
+
+    <div class="social-icons">
+        <a href="https://linkedin.com" target="_blank">in</a>
+        <a href="https://instagram.com" target="_blank">IG</a>
+        <a href="mailto:youremail@gmail.com">✉</a>
+    </div>
+
+    <div class="date-time" id="currentDateTime"></div>
+
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const time = now.toLocaleTimeString();
+            const date = now.toLocaleDateString();
+            document.getElementById('currentDateTime').innerText = date + ' - ' + time;
+        }
+
+        setInterval(updateDateTime, 1000);
+    </script>
 </body>
 </html>
