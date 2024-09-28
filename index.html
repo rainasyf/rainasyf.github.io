@@ -5,61 +5,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raina Syifa Gayatri</title>
 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
     <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
 
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #e0e0e0;
-            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
 
         .profile-pic {
-            margin-top: 40px;
+            margin-top: 20px;
         }
         
         .profile-pic img {
-            width: 150px;
-            height: 150px;
+            width: 140px;
+            height: 140px;
             border-radius: 50%;
             object-fit: cover;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         .name-nim {
-            background-color: #757575;
+            background-color: #4a90e2;
             color: white;
-            padding: 20px;
-            margin: 20px auto;
-            width: 300px;
-            border-radius: 10px;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 12px;
+            width: 280px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .name-nim h1 {
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .name-nim h2 {
+            font-weight: 300;
+            margin: 5px 0 0 0;
+        }
+
+        .name-nim h1 span {
+            font-weight: 900;
         }
 
         .social-icons {
             margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
         }
 
         .social-icons a {
             display: inline-block;
-            margin: 0 10px;
         }
 
         .social-icons img {
             width: 40px;
             height: 40px;
-            border-radius: 50%;
             object-fit: cover;
+            transition: transform 0.3s ease;
         }
-        
+
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+
         .date-time {
-            background-color: #757575;
+            background-color: #4a90e2;
             color: white;
-            padding: 10px;
-            display: inline-block;
+            padding: 8px;
             margin-top: 20px;
-            border-radius: 5px;
+            border-radius: 8px;
+            font-size: 14px;
         }
+
     </style>
 </head>
 <body>
@@ -69,13 +99,13 @@
     </div>
 
     <div class="name-nim">
-        <h1>Raina Syifa Gayatri</h1>
+        <h1><span>Raina</span> Syifa Gayatri</h1>
         <h2>1202220281</h2>
     </div>
 
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/raina-syifa-gayatri/" target="_blank">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/900px-LinkedIn_logo_initials.png?20140125013055" alt="LinkedIn">
         </a>
         <a href="https://instagram.com/rainasyf" target="_blank">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
