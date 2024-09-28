@@ -5,17 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Raina Syifa Gayatri</title>
 
+    <!-- Favicon -->
     <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
 
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #e0e0e0;
+            background-color: #e0e0e0; /* Background abu-abu */
             text-align: center;
             margin: 0;
             padding: 0;
         }
 
+        /* Gambar profil */
         .profile-pic {
             margin-top: 40px;
         }
@@ -27,8 +29,9 @@
             object-fit: cover;
         }
 
+        /* Nama dan NIM */
         .name-nim {
-            background-color: #757575;
+            background-color: #757575; /* Warna abu-abu lebih gelap */
             color: white;
             padding: 20px;
             margin: 20px auto;
@@ -36,25 +39,26 @@
             border-radius: 10px;
         }
 
+        /* Ikon sosial media */
         .social-icons {
             margin-top: 20px;
         }
 
         .social-icons a {
             display: inline-block;
-            width: 40px;
-            height: 40px;
-            background-color: #757575;
-            color: white;
-            border-radius: 50%;
-            line-height: 40px;
             margin: 0 10px;
-            text-decoration: none;
-            font-size: 18px;
         }
 
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%; /* Optional: Buat ikon berbentuk bulat */
+            object-fit: cover;
+        }
+
+        /* Waktu saat ini */
         .date-time {
-            background-color: #757575;
+            background-color: #757575; /* Warna abu-abu */
             color: white;
             padding: 10px;
             display: inline-block;
@@ -65,21 +69,31 @@
 </head>
 <body>
 
+    <!-- Foto Profil -->
     <div class="profile-pic">
         <img src="https://github.com/username/repositoryname/blob/main/foto_diri.png?raw=true" alt="Profile Picture">
     </div>
 
+    <!-- Nama dan NIM -->
     <div class="name-nim">
         <h1>Raina Syifa Gayatri</h1>
         <h2>1202220281</h2>
     </div>
 
+    <!-- Ikon Sosial Media -->
     <div class="social-icons">
-        <a href="https://www.linkedin.com/in/raina-syifa-gayatri/" target="_blank">in</a>
-        <a href="https://instagram.com/rainasyf" target="_blank">IG</a>
-        <a href="https://github.com/rainasyf" target="_blank">GH</a>
+        <a href="https://www.linkedin.com/in/raina-syifa-gayatri/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e9/Linkedin_icon.svg" alt="LinkedIn">
+        </a>
+        <a href="https://instagram.com/rainasyf" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://github.com/rainasyf" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+        </a>
     </div>
-    
+
+    <!-- Waktu Saat Ini -->
     <div class="date-time" id="currentDateTime"></div>
 
     <script>
