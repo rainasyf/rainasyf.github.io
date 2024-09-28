@@ -10,10 +10,14 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
+            background-color: #e0e0e0;
             text-align: center;
             margin: 0;
             padding: 0;
+        }
+
+        .profile-pic {
+            margin-top: 40px;
         }
         
         .profile-pic img {
@@ -21,46 +25,48 @@
             height: 150px;
             border-radius: 50%;
             object-fit: cover;
-            margin: 20px auto;
         }
 
         .name-nim {
-            background-color: #577877;
+            background-color: #757575;
             color: white;
-            padding: 10px;
-            font-size: 18px;
-            margin-bottom: 20px;
+            padding: 20px;
+            margin: 20px auto;
+            width: 300px;
+            border-radius: 10px;
         }
 
         .social-icons {
-            margin: 20px;
+            margin-top: 20px;
         }
 
         .social-icons a {
             display: inline-block;
             width: 40px;
             height: 40px;
-            background-color: #577877;
+            background-color: #757575;
             color: white;
             border-radius: 50%;
             line-height: 40px;
             margin: 0 10px;
             text-decoration: none;
+            font-size: 18px;
         }
 
         .date-time {
-            background-color: #fff;
-            border: 1px solid #577877;
+            background-color: #757575;
+            color: white;
             padding: 10px;
             display: inline-block;
             margin-top: 20px;
+            border-radius: 5px;
         }
     </style>
 </head>
 <body>
 
     <div class="profile-pic">
-        <img src="https://github.com/rainasyf/rainasyf.github.io/blob/main/foto%20diri.png?raw=true" alt="Profile Picture" width="150" height="150">
+        <img src="https://github.com/username/repositoryname/blob/main/foto_diri.png?raw=true" alt="Profile Picture">
     </div>
 
     <div class="name-nim">
@@ -71,9 +77,9 @@
     <div class="social-icons">
         <a href="https://www.linkedin.com/in/raina-syifa-gayatri/" target="_blank">in</a>
         <a href="https://instagram.com/rainasyf" target="_blank">IG</a>
-        <a href="https://github.com/rainasyf">GITHUB</a>
+        <a href="https://github.com/rainasyf" target="_blank">GH</a>
     </div>
-
+    
     <div class="date-time" id="currentDateTime"></div>
 
     <script>
