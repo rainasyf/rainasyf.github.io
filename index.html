@@ -1,80 +1,77 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Web - Raina Syifa Gayatri</title>
+    <title>Raina Syifa Gayatri</title>
+
+    <link rel="icon" href="https://example.com/favicon.ico" type="image/x-icon">
+
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f9f9f9;
             text-align: center;
-            padding: 20px;
+            margin: 0;
+            padding: 0;
         }
         
-        .profile-pic {
+        .profile-pic img {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            background-color: #bbb;
+            object-fit: cover;
             margin: 20px auto;
         }
 
         .name-nim {
-            background-color: #4caf50;
+            background-color: #577877;
             color: white;
-            padding: 15px;
-            margin: 20px auto;
-            width: 300px;
-            font-size: 20px;
-            font-weight: bold;
-            border-radius: 10px;
+            padding: 10px;
+            font-size: 18px;
+            margin-bottom: 20px;
         }
 
         .social-icons {
-            display: flex;
-            justify-content: center;
             margin: 20px;
         }
 
         .social-icons a {
+            display: inline-block;
             width: 40px;
             height: 40px;
-            border-radius: 50%;
-            background-color: #4caf50;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
+            background-color: #577877;
             color: white;
+            border-radius: 50%;
+            line-height: 40px;
             margin: 0 10px;
             text-decoration: none;
-            font-size: 18px;
         }
 
         .date-time {
             background-color: #fff;
-            border: 2px solid #4caf50;
-            color: #4caf50;
+            border: 1px solid #577877;
             padding: 10px;
-            font-size: 16px;
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
 
-    <div class="profile-pic"></div>
+    <div class="profile-pic">
+        <img src="profile.jpg" alt="Profile Picture">
+    </div>
 
     <div class="name-nim">
-        Raina Syifa Gayatri <br> 1202220281
+        <h1>Raina Syifa Gayatri</h1>
+        <h2>1202220281</h2>
     </div>
 
     <div class="social-icons">
-        <a href="https://linkedin.com" target="_blank">in</a>
-        <a href="https://instagram.com" target="_blank">IG</a>
-        <a href="mailto:youremail@gmail.com">✉</a>
+        <a href="https://www.linkedin.com/in/raina-syifa-gayatri/" target="_blank">in</a>
+        <a href="https://instagram.com/rainasyf" target="_blank">IG</a>
+        <a href="https://github.com/rainasyf">GITHUB</a>
     </div>
 
     <div class="date-time" id="currentDateTime"></div>
@@ -84,10 +81,11 @@
             const now = new Date();
             const time = now.toLocaleTimeString();
             const date = now.toLocaleDateString();
-            document.getElementById('currentDateTime').innerText = date + ' - ' + time;
+            document.getElementById('currentDateTime').innerText = date + ' ' + time;
         }
 
         setInterval(updateDateTime, 1000);
     </script>
+
 </body>
 </html>
